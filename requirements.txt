@@ -1,0 +1,10 @@
+# Runtime
+numpy>=1.26,<3.0
+pandas>=2.0,<3.0
+matplotlib>=3.8,<4.0      # notebook plots only
+
+# Tests
+pytest>=8.0,<9.0
+
+# Optional: live data loader used by backtester.load_yfinance (see README appendix)
+# yfinance>=0.2
