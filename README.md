@@ -1,5 +1,13 @@
 # Realistic Backtesting Engine
 
+> [!NOTE]
+> **Repository status.** What is published here is `engine.py` — the no-lookahead
+> simulation loop and the cost model. The notebook and the test suite import a
+> `backtester` package that is not in this repository yet, so neither runs from a
+> fresh clone, and the **Project layout** and **How to run** sections below describe
+> the full project rather than its current contents. The numbers reported here come
+> from the notebook's saved output.
+
 Situation: Does a naive EMA(5/8) crossover survive realistic trading costs? (I made an algorithm which would check that for US currency)
 
 Short answer: No. After costs it returns +6.7% over five years while buying and holding returns 134%, with a worse drawdown, and its mean daily return is statistically indistinguishable from zero. The repository is the evidence.
